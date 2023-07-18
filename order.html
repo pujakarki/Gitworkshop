@@ -5,6 +5,7 @@
     <!-- Important to make website responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Website</title>
+    
 
     <!-- Link our CSS file -->
     <link rel="stylesheet" href="css/style.css">
@@ -33,7 +34,7 @@
                         <a href="foods.html">Foods</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="logout.html">Logout</a>
                     </li>
                 </ul>
             </div>
@@ -58,8 +59,12 @@
                     </div>
     
                     <div class="food-menu-desc">
-                        <h3>Food Title</h3>
-                        <p class="food-price">$2.3</p>
+                        <h3>cart items</h3>
+                        <div>
+                            <ul id="cartItems"></ul>
+                            <button onclick="goToOrder()">Proceed to Order</button>
+                          </div>
+                        
 
                         <div class="order-label">Quantity</div>
                         <input type="number" name="qty" class="input-responsive" value="1" required>
